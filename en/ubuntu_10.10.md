@@ -73,7 +73,7 @@ And after:
     
 For PostgreSQL:
 
-    sudo apt-get libpq-dev 
+    sudo apt-get install libpq-dev 
 
 And after:
 
