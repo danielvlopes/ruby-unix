@@ -3,8 +3,6 @@ RUBY e RAILS NO UBUNTU (10.10)
 
 Step by step guide to install Rails (last version) and Ruby (1.9.2) on Ubuntu. We also cover some GEdit setting with GMate plugin.
 
-You can also download the torrent of the Virtualbox Image if you want to run Ubuntu on top of a virtual machine. If you downloaded please help seeding.
-
 **1º Update apt-get**
 
 Open the terminal and run:
