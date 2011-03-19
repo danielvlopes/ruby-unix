@@ -73,7 +73,7 @@ Depois:
     
 Se pretende usar PostgreSQL faça:
 
-    sudo apt-get libpq-dev 
+    sudo apt-get install libpq-dev 
 
 Depois:
 
