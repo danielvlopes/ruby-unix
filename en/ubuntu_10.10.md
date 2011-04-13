@@ -65,7 +65,7 @@ Now this should work:
 
 In development mode most of the time sqlite is enough. If you want to use MySQL the right Gem is mysql2 but before you should do:
 
-    sudo apt-get libmysqlclient16-dev 
+    sudo apt-get install libmysqlclient16-dev 
 
 And after:
 
