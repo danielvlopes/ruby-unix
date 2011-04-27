@@ -11,7 +11,7 @@ When install some gems you'll need a compiler and other development tools. In Ma
 
 OSX comes with Ruby and Rails pre-installed but I'll use RVM to have more controle over Ruby versions. Run the command below in Terminal.app :
 
-    bash < <( curl http://rvm.beginrescueend.com/releases/rvm-install-head )
+    bash < <(curl -s https://rvm.beginrescueend.com/install/rvm)
 
 **3º Loading RVM with your Terminal**
 

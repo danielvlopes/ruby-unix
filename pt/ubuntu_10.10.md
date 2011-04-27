@@ -17,7 +17,7 @@ Abra o terminal e rode:
 
 O RVM permite instalar e gerenciar várias versões do Ruby. Mas nós usaremos só uma:
 
-    bash < <( curl http://rvm.beginrescueend.com/releases/rvm-install-head )
+    bash < <(curl -s https://rvm.beginrescueend.com/install/rvm)
 
 **4º Carregando RVM no seu Terminal**
 

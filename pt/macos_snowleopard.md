@@ -11,46 +11,46 @@ Durante a instalação de algumas gems e pacotes será necessário um compilador
 
 OSX já vem com Ruby e Rails instalados mas utilizaremos o RVM para termos maior controle sobre versão do Ruby e Gems. Rode o comando abaixo no Terminal.app :
 
-    bash < <( curl http://rvm.beginrescueend.com/releases/rvm-install-head )
+    bash < <(curl -s https://rvm.beginrescueend.com/install/rvm)
 
 **3º Carregando RVM no seu Terminal**
 
-Ainda no Terminal digite 
+Ainda no Terminal digite
 
     mate ~/.bash_profile
 
 Coloque a primeira linha como abaixo, salve e feche:
 
     echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"' >> ~/.bash_profile
-    
+
 Agora basta recarregar o arquivo (no Terminal digite):
 
     . ~/.bash_profile
-    
+
 **4º Instalando o Ruby**
 
 Rode o comando abaixo (vai demorar alguns minutos)
 
     rvm install 1.9.2
-    
+
 Coloque o ruby 1.9.2 como default do seu user, dessa forma seu terminal vai ignorar o Ruby da Apple:
 
     rvm --default use 1.9.2
-    
+
 Agora o comando abaixo deve funcionar:
 
     ruby -v
-    
+
 **5º Instalando o Rails**
 
     gem install rails
-    
+
 **6 ºMySQL (OPICIONAL)**
 
 Para modo de desenvolvimento a maioria das vezes sqlite é suficiente e já foi instalado. Se você pretende usar MySQL a Gem correta é mysql2 (instale a Gem depois de instalar o DMG do MySQL):
 
-    gem install mysql2    
-    
+    gem install mysql2
+
 Configurando Editor de Texto
 ===
 
