@@ -9,17 +9,15 @@ When install some gems you'll need a compiler and other development tools. In Ma
 
 **2º Installing RVM**
 
-OSX comes with Ruby and Rails pre-installed but I'll use RVM to have more controle over Ruby versions. Run the command below in Terminal.app :
+OSX comes with Ruby and Rails pre-installed but I'll use RVM to have more control over Ruby versions.
+
+To install RVM you'll need to install GIT. Download it with the [DMG](http://code.google.com/p/git-osx-installer/downloads/list) or via [homebrew](http://mxcl.github.com/homebrew/). After install git run the command below in Terminal.app :
 
     bash < <(curl -s https://rvm.beginrescueend.com/install/rvm)
 
 **3º Loading RVM with your Terminal**
 
-In Terminal type:
-
-    mate ~/.bash_profile
-
-On the first line put:
+Run de code below
 
     echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"' >> ~/.bash_profile
     

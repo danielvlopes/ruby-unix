@@ -1,4 +1,4 @@
-RUBY e RAILS NO UBUNTU (10.10)
+RUBY e RAILS NO UBUNTU (10.X e 11.X)
 ===
 
 Passo a passo para a instalação do Rails (última versão) e Ruby (1.9.2) no Ubuntu. Também envolve aos ajustes do GEdit com instalação do GMate.
@@ -21,11 +21,7 @@ O RVM permite instalar e gerenciar várias versões do Ruby. Mas nós usaremos s
 
 **4º Carregando RVM no seu Terminal**
 
-Abrindo o arquivo .bashrc:
-
-    gedit ~/.bashrc
-
-Coloque a primeira linha como abaixo, salve e feche:
+Execute no terminal o comando abaixo:
 
     echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"' >> ~/.bashrc
     
