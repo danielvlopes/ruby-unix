@@ -70,25 +70,44 @@ Now you can run:
 
     rails server
 
-## MySQL e PostgreSQL (OPITIONAL)
+## Installing Databases (OPTIONAL)
 
 ### For MySQL
 In development mode most of the time sqlite is enough. If you want to use MySQL the right Gem is mysql2 but before you should do:
 
     sudo apt-get install libmysqlclient16-dev
 
-And after:
+And after that:
 
     gem install mysql2
 
 ### For PostgreSQL:
+The PostgreSQL database is also used for most deployments on Heroku. Before installing the gem you should install the database with:
 
     sudo apt-get install libpq-dev
 
-And after:
+And after that:
 
     gem install pg
 
+### For MongoDB:
+The mongodb package on the regular Ubuntu repositories is usually out of date, you should install it from 10Gen's repository, unfortunately, they don't have a PPA. To add their repo first you need to get 10gen's key and then add the source servers to your list:
+
+    sudo apt-key adv --keyserver keyserver.ubuntu.com --recv 7F0CEB10
+    sudo sh -c "echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' >> /etc/apt/sources.list"
+
+After that, update your package list and install it:
+
+    sudo apt-get update 
+    sudo apt-get install mongodb-10gen
+
+These instructions will download and install the package, create a mongodb user and configure MongoDB to run as a service using upstart. You can check its status and start/stop it using:
+
+    service mongodb status
+    sudo service mongodb stop
+    sudo service mongodb start
+
+Note that MongoDB will crate journaling files on /var/lib/mongodb/journal occupying a total of 3.1 GB, make sure you have enough space on your disk. You can see the official instructions at http://www.mongodb.org/display/DOCS/Ubuntu+and+Debian+packages
 
 # Setup GEdit
 
