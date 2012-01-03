@@ -70,6 +70,14 @@ Agora você pode rodar:
 
     rails server
 
+## Instalando o ruby-debug19 (OPCIONAL)
+
+Há um problema quando se tenta instalar o ruby-debug19, gerando um erro ao compilar o linecache19, que até o momento não foi resolvido. Para contornar esse problema execute o seguinte comando:
+
+    gem install ruby-debug19 -- --with-ruby-include=$rvm_path/src/ruby-1.9.3-p0
+
+Você deve manter o "--" no meio do comando. Essas instruções foram obtidas no StackOverflow http://stackoverflow.com/questions/6650567/installing-linecache19-for-ruby-1-9-2-via-rvm
+
 ## Installing Databases (OPCIONAL)
 
 ### Para MySQL
