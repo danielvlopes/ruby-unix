@@ -107,7 +107,7 @@ These instructions will download and install the package, create a mongodb user 
     sudo service mongodb stop
     sudo service mongodb start
 
-Note that MongoDB will crate journaling files on /var/lib/mongodb/journal occupying a total of 3.1 GB, make sure you have enough space on your disk. You can see the official instructions at http://www.mongodb.org/display/DOCS/Ubuntu+and+Debian+packages
+Note that MongoDB will create journaling files on /var/lib/mongodb/journal occupying a total of 3.1 GB, make sure you have enough space on your disk. You can see the official instructions at http://www.mongodb.org/display/DOCS/Ubuntu+and+Debian+packages
 
 # Setup GEdit
 
