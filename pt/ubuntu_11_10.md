@@ -1,6 +1,6 @@
 # RUBY e RAILS NO UBUNTU (11.X)
 
-Passo a passo para a instalação do Rails (última versão) e Ruby (1.9.2) no Ubuntu. Também envolve aos ajustes do GEdit com instalação do GMate.
+Passo a passo para a instalação do Rails (última versão) e Ruby (1.9.3) no Ubuntu. Também envolve aos ajustes do GEdit com instalação do GMate.
 
 ## 1º Atualizando apt-get
 
@@ -16,7 +16,7 @@ Abra o terminal e rode:
 
 O RVM permite instalar e gerenciar várias versões do Ruby. Mas nós usaremos só uma:
 
-  bash < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
+    bash < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
 
 ## 4º Recarregando RVM no seu Terminal
 
@@ -41,6 +41,7 @@ Coloque o ruby 1.9.3 como default do seu user:
 Agora o comando abaixo deve funcionar:
 
     ruby -v
+    ruby 1.9.3p0 (2011-10-30 revision 33570) [x86_64-linux]
 
 ## 7º Instalando o Rails (sempre rode o comando gem sem SUDO)
 

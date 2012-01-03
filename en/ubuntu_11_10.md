@@ -1,6 +1,6 @@
 # RUBY e RAILS NO UBUNTU (10.x and 11.x)
 
-Step by step guide to install Rails (last version) and Ruby (1.9.2) on Ubuntu. We also cover some GEdit setting with GMate plugin.
+Step by step guide to install Rails (last version) and Ruby (1.9.3) on Ubuntu. We also cover some GEdit setting with GMate plugin.
 
 ## 1º Update apt-get
 
@@ -38,14 +38,14 @@ Run (this command will take a couple of minutes)
 
     rvm install 1.9.3
 
-Set ruby 1.9.2 as the default to your user:
+Set ruby 1.9.333 as the default to your user:
 
     rvm --default use 1.9.3
 
 Now this should work:
 
     ruby -v
-    ruby 1.9.2p136 (2010-12-25 revision 30365) [x86_64-linux]
+    ruby 1.9.3p0 (2011-10-30 revision 33570) [x86_64-linux] 
 
 ## 7º Installing Rails
 
