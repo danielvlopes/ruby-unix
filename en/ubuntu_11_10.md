@@ -20,11 +20,11 @@ RVM let you install and manage more than one Ruby version. But here we'll use on
 
 ## 4º Loading RVM
 
-Run de code below
+Run de code below to make sure RVM will be loaded when opening a new terminal: 
 
     echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"' >> ~/.bashrc
 
-Reload the file (in Terminal):
+Reload the configuration file (in Terminal):
 
     . ~/.bashrc
 

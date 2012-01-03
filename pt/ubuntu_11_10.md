@@ -20,7 +20,11 @@ O RVM permite instalar e gerenciar várias versões do Ruby. Mas nós usaremos s
 
 ## 4º Recarregando RVM no seu Terminal
 
-Basta recarregar o arquivo (no Terminal digite):
+Execute o código abaixo para garantir que o RVM será carregado ao abrir um novo terminal:
+
+    echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"' >> ~/.bashrc
+
+Recarregue o arquivo de configuração (no Terminal digite):
 
     . ~/.bashrc
 
