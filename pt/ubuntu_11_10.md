@@ -72,9 +72,11 @@ Agora você pode rodar:
 
 ## Instalando o ruby-debug19 (OPCIONAL)
 
+**ATENÇÃO: Há um bug não resolvido quando se tenta utilizar o ruby-debug19 com o Ruby 1.9.3-p0, você vai encontrar instruções para contornar o problema em http://stackoverflow.com/questions/8378277/cannot-use-ruby-debug19-with-1-9-3-p0. Se não quiser fazer esse procedimento, volte para a versão 1.9.2 na qual o debugger funciona sem problemas, para instala-lo basta seguir as instruções abaixo.**
+
 Há um problema quando se tenta instalar o ruby-debug19, gerando um erro ao compilar o linecache19, que até o momento não foi resolvido. Para contornar esse problema execute o seguinte comando:
 
-    gem install ruby-debug19 -- --with-ruby-include=$rvm_path/src/ruby-1.9.3-p0
+    gem install ruby-debug19 -- --with-ruby-include=$rvm_path/src/ruby-1.9.2-p290
 
 Você deve manter o "--" no meio do comando. Essas instruções foram obtidas no StackOverflow http://stackoverflow.com/questions/6650567/installing-linecache19-for-ruby-1-9-2-via-rvm
 
