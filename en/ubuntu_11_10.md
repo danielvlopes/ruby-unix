@@ -72,9 +72,11 @@ Now you can run:
 
 ## Installing ruby-debug19 (OPTIONAL)
 
+**ATENTION: There's a unsolved bug when using ruby-debug19 with Ruby 1.9.3-p0, the work around can be found here http://stackoverflow.com/questions/8378277/cannot-use-ruby-debug19-with-1-9-3-p0. If you don't feel like doing it, you can switch to 1.9.2 until they release the new debugger version, which should fix the problem, the instructions bellow should work just fine.**
+
 There's an issue when installing ruby-debug19 that breaks when compiling linecache19, which as of this writing is not solved yet. To get around this problem you should do the following:
 
-    gem install ruby-debug19 -- --with-ruby-include=$rvm_path/src/ruby-1.9.3-p0
+    gem install ruby-debug19 -- --with-ruby-include=$rvm_path/src/ruby-1.9.2-p290
 
 You should keep the "--" in the middle of the command. These instructions came from StackOverflow http://stackoverflow.com/questions/6650567/installing-linecache19-for-ruby-1-9-2-via-rvm
 
