@@ -16,7 +16,7 @@ Open the terminal and run:
 
 RVM let you install and manage more than one Ruby version. But here we'll use only one:
 
-    bash < <(curl -s https://rvm.beginrescueend.com/install/rvm)
+    bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
 
 ## 4º Loading RVM
 
