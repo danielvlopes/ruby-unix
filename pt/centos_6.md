@@ -1,18 +1,17 @@
-RUBY e RAILS NO CentOS (6)
-===
+# RUBY e RAILS NO CentOS (6)
 
 Passo a passo para a instalação do Rails (última versão) e Ruby (1.9.3) no CentOS. Também envolve aos ajustes do GEdit com instalação do GMate.
 
 Instruções baseadas no passo a passo para Fedora 15.
 
-**1º Atualizando yum**
+## 1º Atualizando yum
 
 Abra o terminal e rode:
 
     sudo yum update
 
 
-**2º Instalando GIT e Curl**
+## 2º Instalando GIT e Curl
 
 Tente primeiramente instalar o git pelo yum:
 
@@ -32,14 +31,14 @@ Caso ocorra erros de dependência tente instalar manualmente, veja a ultima vers
     sudo rm -r git-x.x.x.x
 
 
-**3º Instalando RVM (Ruby Version Manager)**
+## 3º Instalando RVM (Ruby Version Manager)
 
 O RVM permite instalar e gerenciar várias versões do Ruby. Mas nós usaremos só uma:
 
     bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
 
 
-**4º Carregando RVM no seu Terminal**
+## 4º Carregando RVM no seu Terminal
 
 Execute no terminal o comando abaixo:
 
@@ -50,7 +49,7 @@ Confirme a instalacao executando o comando abaixo, (a saida deverá ser "rvm is 
     type rvm | head -1
 
 
-**5º Instalando os outros pacotes essenciais**
+## 5º Instalando os outros pacotes essenciais
 
     rvm requirements
 
@@ -59,7 +58,7 @@ O comando acima ao final mostrará quais pacotes faltam, conforme VM desejada. B
     sudo yum install -y gcc-c++ patch readline readline-devel zlib zlib-devel libyaml-devel libffi-devel openssl-devel make bzip2 autoconf automake libtool bison iconv-devel ## NOTE: For centos >= 5.4 iconv-devel is provided by glibc
 
 
-**6º Instalando o Ruby**
+## 6º Instalando o Ruby
 
 Rode o comando abaixo (poderá demorar alguns minutos)
 
@@ -73,7 +72,8 @@ Agora o comando abaixo deve mostrar a versão do ruby:
 
     ruby -v
 
-** 7º Instalando o Rails**
+
+## 7º Instalando o Rails
 
     gem install rails
 
@@ -81,7 +81,7 @@ Confirme a instalação com o comando abaixo:
 
     rails -v
 
-** 8º MySQL e PostgreSQL (OPICIONAL)**
+## 8º MySQL e PostgreSQL (OPICIONAL)
 
 Para modo de desenvolvimento a maioria das vezes sqlite é suficiente e já foi instalado. Se você pretende usar MySQL a Gem correta é mysql2 mas antes deve rodar:
 
@@ -99,8 +99,8 @@ Depois:
 
     gem install pg
 
-Configurando GEdit
-===
+
+## Configurando GEdit
 
 **O GMATE AINDA NÃO É COMPATÍVEL COM O GNOME3. ESSE É UM PROBLEMA CONHECIDO E, ASSIM ESPERO, EM BREVE SERÁ CORRIGIDO**
 
