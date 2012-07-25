@@ -22,6 +22,7 @@ O RVM permite instalar e gerenciar várias versões do Ruby. Mas nós usaremos s
 
 ## 4º Recarregando RVM no seu Terminal
 
+    echo '[[ -s "~/.rvm/scripts/rvm" ]] && source "~/.rvm/scripts/rvm"' >> ~/.bashrc
     source ~/.rvm/scripts/rvm
 
 ## 5º Definindo o Ruby default
@@ -98,7 +99,7 @@ O pacote do mongodb no repositório padrão do Ubuntu normalmente estão desatua
 
 Depois disso, atualize a lista de pacotes e instale o mongo:
 
-    sudo apt-get update 
+    sudo apt-get update
     sudo apt-get install mongodb-10gen
 
 Essas instruções irão baixar e instalar o pacote, criar um usuário mongodb e configurá-lo para rodar como um serviço usando o upstart. Você pode verificar o status e iniciar/parar o banco com os seguintes comandos:
