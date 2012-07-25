@@ -10,7 +10,9 @@ Abra o terminal e rode:
 
 ## 2º Instalando pacotes necessários
 
-    sudo apt-get install build-essential openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison subversion
+    sudo apt-get install build-essential openssl libreadline6 libreadline6-dev curl git-core \
+zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf \
+libc6-dev ncurses-dev automake libtool bison subversion nodejs
 
 ## 3º Instalando RVM (Ruby Version Manager)
 
@@ -22,20 +24,16 @@ O RVM permite instalar e gerenciar várias versões do Ruby. Mas nós usaremos s
 
     source ~/.rvm/scripts/rvm
 
-## 5º Instalando o Ruby
+## 5º Definindo o Ruby default
 
-Rode o comando abaixo (vai demorar alguns minutos)
-
-    rvm install 1.8.7,1.9.3
-
-Coloque o ruby 1.9.3 como default do seu user:
+Coloque o ruby 1.9.3 como default do seu usuário:
 
     rvm --default use 1.9.3
 
 Agora o comando abaixo deve funcionar:
 
     ruby -v
-    ruby 1.9.3p125 (2012-02-16 revision 34643) [x86_64-linux]
+    ruby 1.9.3p194 (2012-04-20 revision 35410) [x86_64-linux]
 
 ## 6º Instalando o Rails (sempre rode o comando gem sem SUDO)
 
