@@ -75,7 +75,7 @@ Você deve manter o "--" no meio do comando. Essas instruções foram obtidas no
 ### Para MySQL
 Para modo de desenvolvimento, na maioria das vezes, o sqlite é suficiente e já foi instalado. Se você pretende usar MySQL a Gem correta é a mysql2, mas antes deve rodar:
 
-    sudo apt-get install libmysqlclient16-dev
+    sudo apt-get install libmysqlclient18-dev
 
 Depois:
 
