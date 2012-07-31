@@ -43,7 +43,7 @@ Now this should work:
 
     gem install rails
     
-**6 ºMySQL(OPICIONAL)**
+**6º MySQL(Optional)**
 
 In development mode, most of the time, sqlite is enough but if you want to use MySQL the right gem is mysql2 (before install the gem you should install MySQL DMG from Oracle's site):
 

@@ -1,4 +1,4 @@
-# RUBY e RAILS NO UBUNTU (11.X)
+# RUBY e RAILS NO UBUNTU (12.X)
 
 Passo a passo para a instalação do Rails (última versão) e Ruby (1.9.3) no Ubuntu. Também envolve aos ajustes do GEdit com instalação do GMate.
 
@@ -8,40 +8,35 @@ Abra o terminal e rode:
 
     sudo apt-get update
 
-## 2º Instalando GIT e Curl
+## 2º Instalando pacotes necessários
 
-    sudo apt-get install build-essential git-core curl
+    sudo apt-get install build-essential openssl libreadline6 libreadline6-dev curl git-core \
+    zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf \
+    libc6-dev ncurses-dev automake libtool bison subversion nodejs
 
 ## 3º Instalando RVM (Ruby Version Manager)
 
 O RVM permite instalar e gerenciar várias versões do Ruby. Mas nós usaremos só uma:
 
-    curl -L https://get.rvm.io | bash -s stable
+    curl -L https://get.rvm.io | bash -s stable --ruby
 
-## 4º Instalando os outros pacotes essenciais
+## 4º Definindo o Ruby default
 
-    sudo apt-get install build-essential openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison subversion
-
-## 5º Instalando o Ruby
-
-Rode o comando abaixo (vai demorar alguns minutos)
-
-    rvm install 1.9.3
-
-Coloque o ruby 1.9.3 como default do seu user:
+Coloque o ruby 1.9.3 como default do seu usuário:
 
     rvm --default use 1.9.3
 
 Agora o comando abaixo deve funcionar:
 
     ruby -v
-    ruby 1.9.3p0 (2011-10-30 revision 33570) [x86_64-linux]
+    ruby 1.9.3p194 (2012-04-20 revision 35410) [x86_64-linux]
 
-## 6º Instalando o Rails (sempre rode o comando gem sem SUDO)
+## 5º Instalando o Rails (sempre rode o comando gem sem SUDO)
 
+    gem update --system
     gem install rails
 
-## 7º Primeira aplicação
+## 6º Primeira aplicação
 
 Agora você pode testar criando a sua primeira aplicação:
 
@@ -58,7 +53,7 @@ Salve, feche e rode o comando abaixo no Terminal:
 
 Agora você pode rodar:
 
-    rails server
+    rails s
 
 ## Instalando o ruby-debug19 (OPCIONAL)
 
@@ -75,7 +70,7 @@ Você deve manter o "--" no meio do comando. Essas instruções foram obtidas no
 ### Para MySQL
 Para modo de desenvolvimento, na maioria das vezes, o sqlite é suficiente e já foi instalado. Se você pretende usar MySQL a Gem correta é a mysql2, mas antes deve rodar:
 
-    sudo apt-get install libmysqlclient16-dev
+    sudo apt-get install libmysqlclient18-dev
 
 Depois:
 
@@ -99,7 +94,7 @@ O pacote do mongodb no repositório padrão do Ubuntu normalmente estão desatua
 
 Depois disso, atualize a lista de pacotes e instale o mongo:
 
-    sudo apt-get update 
+    sudo apt-get update
     sudo apt-get install mongodb-10gen
 
 Essas instruções irão baixar e instalar o pacote, criar um usuário mongodb e configurá-lo para rodar como um serviço usando o upstart. Você pode verificar o status e iniciar/parar o banco com os seguintes comandos:

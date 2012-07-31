@@ -3,40 +3,62 @@ RUBY e RAILS NO FEDORA (15)
 
 Passo a passo para a instalação do Rails (última versão) e Ruby (1.9.2) no Fedora. Também envolve aos ajustes do GEdit com instalação do GMate.
 
-**1º Atualizando apt-get**
+**1º Atualizando yum**
 
 Abra o terminal e rode:
 
     sudo yum update
 
 **2º Instalando GIT e Curl**
-    
+
     sudo yum install git curl
-    
+
 **3º Instalando RVM (Ruby Version Manager)**
 
 O RVM permite instalar e gerenciar várias versões do Ruby. Mas nós usaremos só uma:
 
+<<<<<<< HEAD
     curl -L https://get.rvm.io | bash -s stable
 
 **4º Instalando os outros pacotes essenciais**
+=======
+    bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
+
+**4º Carregando RVM no seu Terminal**
+
+Execute no terminal o comando abaixo:
+
+    echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"' >> ~/.bashrc
+
+Agora basta recarregar o arquivo (no Terminal digite):
+
+    . ~/.bashrc
+
+**5º Instalando os outros pacotes essenciais**
+>>>>>>> e5b58ebab22473b5ab4e9d9a262d2ccefb9cf58a
 
     rvm notes
-    
+
 Comando acima ao final mostrará quais pacotes faltam. Basta copiar e colar no terminal ou copiar a linha abaixo:
 
+<<<<<<< HEAD
     sudo yum install bison openssl openssl-devel readline readline-devel curl git zlib zlib-devel libyaml libyaml-devel libsqlite3x libsqlite3x-devel sqlite libxml2-devel libxslt-devel autoconf ncurses-devel 
     
 **5º Instalando o Ruby**
+=======
+    sudo yum install bison openssl openssl-devel readline readline-devel curl git zlib zlib-devel libyaml libyaml-devel libsqlite3x libsqlite3x-devel sqlite libxml2-devel libxslt-devel autoconf ncurses-devel
+
+**6ºInstalando o Ruby**
+>>>>>>> e5b58ebab22473b5ab4e9d9a262d2ccefb9cf58a
 
 Rode o comando abaixo (vai demorar alguns minutos)
 
     rvm install 1.9.2
-    
+
 Coloque o ruby 1.9.2 como default do seu user:
 
     rvm --default use 1.9.2
-    
+
 Agora o comando abaixo deve funcionar:
 
     ruby -v
@@ -50,27 +72,27 @@ Agora o comando abaixo deve funcionar:
 
 Para modo de desenvolvimento a maioria das vezes sqlite é suficiente e já foi instalado. Se você pretende usar MySQL a Gem correta é mysql2 mas antes deve rodar:
 
-    sudo yum install mysql mysql-libs 
+    sudo yum install mysql mysql-libs
 
 Depois:
 
     gem install mysql2
-    
+
 Se pretende usar PostgreSQL faça:
 
-    sudo yum install postgresql postgresql-libs 
+    sudo yum install postgresql postgresql-libs
 
 Depois:
 
     gem install pg
-    
+
 Configurando GEdit
 ===
 
 **O GMATE AINDA NÃO É COMPATÍVEL COM O GNOME3. ESSE É UM PROBLEMA CONHECIDO E, ASSIM ESPERO, EM BREVE SERÁ CORRIGIDO**
 
-Para o GEdit usaremos o plugin GMate que tratará snippets, colorização e uma série de coisas úteis para o dia a dia. Para instalar o GMate basta executar os seguintes comandos no terminal: 
-   
+Para o GEdit usaremos o plugin GMate que tratará snippets, colorização e uma série de coisas úteis para o dia a dia. Para instalar o GMate basta executar os seguintes comandos no terminal:
+
     sudo yum install pywebkitgtk python-sexy python-inotify ack
     git clone https://github.com/gmate/gmate.git
     cd gmate
