@@ -17,19 +17,9 @@ Abra o terminal e rode:
 
 O RVM permite instalar e gerenciar várias versões do Ruby. Mas nós usaremos só uma:
 
-    bash < <(curl -s https://rvm.beginrescueend.com/install/rvm)
+    curl -L https://get.rvm.io | bash -s stable
 
-**4º Carregando RVM no seu Terminal**
-
-Execute no terminal o comando abaixo:
-
-    echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"' >> ~/.bashrc
-    
-Agora basta recarregar o arquivo (no Terminal digite):
-
-    . ~/.bashrc
-
-**5º Instalando os outros pacotes essenciais**
+**4º Instalando os outros pacotes essenciais**
 
     rvm notes
     
@@ -37,7 +27,7 @@ Comando acima ao final mostrará quais pacotes faltam. Basta copiar e colar no t
 
     sudo yum install bison openssl openssl-devel readline readline-devel curl git zlib zlib-devel libyaml libyaml-devel libsqlite3x libsqlite3x-devel sqlite libxml2-devel libxslt-devel autoconf ncurses-devel 
     
-**6ºInstalando o Ruby**
+**5º Instalando o Ruby**
 
 Rode o comando abaixo (vai demorar alguns minutos)
 
@@ -52,11 +42,11 @@ Agora o comando abaixo deve funcionar:
     ruby -v
     ruby 1.9.2p136 (2010-12-25 revision 30365) [x86_64-linux]
     
-**7º Instalando o Rails**
+**6º Instalando o Rails**
 
     gem install rails
     
-**8ºMySQL e PostgreSQL (OPICIONAL)**
+**7º MySQL e PostgreSQL (OPICIONAL)**
 
 Para modo de desenvolvimento a maioria das vezes sqlite é suficiente e já foi instalado. Se você pretende usar MySQL a Gem correta é mysql2 mas antes deve rodar:
 

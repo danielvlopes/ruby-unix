@@ -13,19 +13,9 @@ OSX já vem com Ruby e Rails instalados mas utilizaremos o RVM para termos maior
 
 Para instalar o RVM você vai precisar do GIT. Faça download do [DMG](http://code.google.com/p/git-osx-installer/downloads/list) ou instale via [homebrew](http://mxcl.github.com/homebrew/). Depois de instalar o GIT rode o comando abaixo:
 
-    bash < <(curl -s https://rvm.beginrescueend.com/install/rvm)
+    curl -L https://get.rvm.io | bash -s stable
 
-**3º Carregando RVM no seu Terminal**
-
-Execute no terminal o comando abaixo:
-
-    echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"' >> ~/.bash_profile
-
-Agora basta recarregar o arquivo (no Terminal digite):
-
-    . ~/.bash_profile
-
-**4º Instalando o Ruby**
+**3º Instalando o Ruby**
 
 Rode o comando abaixo (vai demorar alguns minutos)
 
@@ -39,11 +29,11 @@ Agora o comando abaixo deve funcionar:
 
     ruby -v
 
-**5º Instalando o Rails**
+**4º Instalando o Rails**
 
     gem install rails
 
-**6 ºMySQL (OPICIONAL)**
+**5 ºMySQL (OPICIONAL)**
 
 Para modo de desenvolvimento a maioria das vezes sqlite é suficiente e já foi instalado. Se você pretende usar MySQL a Gem correta é mysql2 (instale a Gem depois de instalar o DMG do MySQL):
 
