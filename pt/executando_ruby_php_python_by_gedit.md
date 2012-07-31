@@ -74,7 +74,7 @@ No campo de seleção de entrada coloque:
 
 No de saida:
 		
-		Mostrar no painel inferior"
+		Mostrar no painel inferior
 
 
 Na área de Aplicabilidade, deixe:
