@@ -62,7 +62,7 @@ Informe o nome do comando, por exemplo "Ruby" e copie e cole no campo "Command(s
 		end 
 
 
-Em seguida, escolha a tecla de atalho, por exemplo 
+Em seguida, escolha a tecla de atalho, por exemplo:
 		
 		F5
 
@@ -86,4 +86,9 @@ Fecha e cria um arquivo com o código:
 		
 		puts "Estou executando Ruby pelo GEdit!!" 
 
-Salve o arquivo "teste.rb" e veja seja feliz!!
+
+Salve o arquivo como por exemplo:
+		
+		executando_ruby.rb
+		
+Pressione F5 (por exemplo) veja seja feliz!!
