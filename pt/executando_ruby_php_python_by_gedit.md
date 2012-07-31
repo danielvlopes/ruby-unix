@@ -19,20 +19,24 @@ Para o GEdit usaremos o plugin GMate que tratará snippets, colorização e uma 
 Abra o GEdit vá em Editar/Edit Preferências/Preferences e em Plug-ins habilite todos. 
 
 
-## 3º Executando Ruby pelo GEdit
+## 3º Habilitar um Plugin ao GEdit para inserir comandos
 
 Primeiro você tem que habilitar um Plugins, que aceita inserir comandos no GEdit. 
     
-    Para isso vai em: "Edit > Preferences > Plugins > External Tool ou ( Ferramentas externas ) " 
+		Edit > Preferences > Plugins > External Tool ou ( Ferramentas externas )
 
 Feito isso, seu GEdit, já aceita criar novos comandos, como por exemplo, apertar F5 e executar um código Ruby.
 
 
-Agora, temos que criar o comando para essa execução dos códigos Ruby. Basta ir em "Tools > Manager External Tools". Com o gerenciador de comandos do GEdit aberto, é possível criar comando para execução. É só clicar o sinal de "+" ou "Adicionar" e adicione um novo comando. 
+## 4º Criar o comando para essa execução os códigos pelo GEdit
 
-Informe o nome do comando, por exemplo "Ruby" e copie e cole no campo "Command(s)" o código abaixo. Em seguida, escolha a tecla de atalho, por exemplo "F5". 
-No campo de seleção de entrada coloca "Documento Atual" e no de saida, "Mostrar no painel inferior". 
-Deixe para "todos os documento e todas as linguagem" na área de Aplicabilidade.
+	Tools > Manager External Tools. 
+	
+	
+Com o gerenciador de comandos do GEdit aberto, é só clicar o sinal de "+" ou "Adicionar" e adicione um novo comando.
+
+Informe o nome do comando, por exemplo "Ruby" e copie e cole no campo "Command(s)" o código abaixo. 
+
 
 		################################## 
 		#!/usr/bin/env ruby 
@@ -57,5 +61,20 @@ Deixe para "todos os documento e todas as linguagem" na área de Aplicabilidade.
 		system(command) 
 		end 
 
+Em seguida, escolha a tecla de atalho, por exemplo 
+	F5
 
-Fecha e cria um código de puts "Estou executando Ruby pelo GEdit!!" e veja seja feliz!!
+No campo de seleção de entrada coloque:
+	Documento Atual
+
+No de saida, 
+	Mostrar no painel inferior"
+
+Na área de Aplicabilidade, deixe:
+	todos os documento e todas as linguagem
+
+
+Fecha e cria um arquivo com o código:
+	puts "Estou executando Ruby pelo GEdit!!" 
+
+Salve o arquivo "teste.rb" e veja seja feliz!!
