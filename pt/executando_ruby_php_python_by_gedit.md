@@ -62,19 +62,19 @@ Informe o nome do comando, por exemplo "Ruby" e copie e cole no campo "Command(s
 		end 
 
 Em seguida, escolha a tecla de atalho, por exemplo 
-	F5
+		F5
 
 No campo de seleção de entrada coloque:
-	Documento Atual
+		Documento Atual
 
 No de saida, 
-	Mostrar no painel inferior"
+		Mostrar no painel inferior"
 
 Na área de Aplicabilidade, deixe:
-	todos os documento e todas as linguagem
+		todos os documento e todas as linguagem
 
 
 Fecha e cria um arquivo com o código:
-	puts "Estou executando Ruby pelo GEdit!!" 
+		puts "Estou executando Ruby pelo GEdit!!" 
 
 Salve o arquivo "teste.rb" e veja seja feliz!!
