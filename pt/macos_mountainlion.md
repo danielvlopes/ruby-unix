@@ -43,6 +43,22 @@ Para verificar se tudo está ok, rode o seguinte comando no terminal:
 
     ruby -v
 
+**Instalando versões antigas do Ruby**
+
+Caso você tenha problemas pra instalar versões antigas do Ruby, instale o gcc antigo:
+    brew tap homebrew/dupes
+    brew install apple-gcc42
+
+Depois, adicione a linha a seguir no seu arquivo ~/.profile (ou similar):
+
+    export CC=/usr/local/bin/gcc-4.2
+
+E finalmente instale a versão antiga do Ruby que você precisa:
+
+    CFLAGS="-I/opt/X11/include" rvm reinstall ree
+
+Mais informações neste post: http://coderwall.com/p/dtbuqg
+
 **5º Instalando o Rails**
 
     gem install rails
