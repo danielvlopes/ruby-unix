@@ -33,7 +33,7 @@ Now the command below should print the ruby version 1.9.3:
     gem update --system
     gem install rails
 
-## 6º Installing Rails
+## 6º Testing Rails
 
 Just for test purposes, you can creating your first app:
 
