@@ -5,9 +5,13 @@ This project is a guide through Ruby/Rails instalation for Rails newcomers. I'll
 
 English versions in "en" folder.
 
+Agile Way: https://github.com/rails/rails-dev-box
+
 Instalando e configurando Ruby e Rails no Unix
 ===
 
 Este projeto é um passo a passo para auxiliar novos desenvoledores a começarem com Ruby e Rails em ambientes Unix. A medida que novas versões forem lançadas eu farei atualizações nesse repositório para garantir que os passos continuam funcionando. Contribuições com novas versões também são bem vindas (pull request plz).
 
 Versões em Português na pasta "pt".
+
+Forma rápida: https://github.com/rails/rails-dev-box
