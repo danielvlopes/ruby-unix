@@ -18,6 +18,11 @@ Confira se tudo está ok, verificando a versão do git no terminal:
 O Mac OSX já vem com o Ruby e o Rails instalados, mas utilizaremos o RVM para podermos instalar (de forma fácil) mais de uma versão do Ruby e ter mais controle das gems. Para instalar o RVM, rode no terminal:
 
     curl -L https://get.rvm.io | bash -s stable
+    
+Caso voce use o Mavericks e o codigo acima nao tenha funcionado, tente o codigo abaixo.
+
+    ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
+
 
 **3º Instalando o Homebrew**
 
