@@ -158,3 +158,19 @@ Para o GEdit usaremos o plugin GMate que tratará snippets, colorização e uma 
     sudo apt-get install gedit-gmate
 
 Abra o GEdit vá em Editar/Edit Preferências/Preferences e em Plug-ins habilite todos. Agora você pode criar sua primeira aplicação Rails e trabalhar com um bom editor.
+
+
+# Instalar Brackets
+
+Brackets é um editor opensource leve e bem agradável de se trabalhar, se bem configurado, ele pode aumentar consideravelmente sua produtividade.
+Para ter ele em sua máquina entre nesta página (oficial do projeto) e efetue o download da versão recomendada por eles:
+
+    http://download.brackets.io/
+    
+Caso não tenha o gdebi, instale-o, pois ele te ajudará não somente neste caso, mas entre muitos outros:
+
+    sudo apt-get install gdebi    
+    
+Depois disso, instale o Brackets pelo terminal com o comando:
+
+    sudo gdebi <arquivo baixado>
