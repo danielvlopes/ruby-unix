@@ -29,7 +29,7 @@ Caso não tenha, ele pedira a senha de root e executará o sudo apt-get install 
     
 ## 4º Definindo o Ruby default
 
-Coloque o ruby 1.9.3 como default do seu usuário:
+Coloque o ruby 2.1.1 como default do seu usuário:
 
     rvm --default use 2.1.1
 
@@ -70,9 +70,9 @@ A sintaxe do comando é fácil, se seguir esta sintaxe, poderá instalar 'n' ver
     
 Exemplo:
 
-    rvm install 1.8.7
+    rvm install 2.0.0
     
-O comando acima instalará a versão 1.8.7 do Ruby.
+O comando acima instalará a versão 2.0.0 do Ruby.
 
 ## Verificando as versões Ruby instaladas
 
@@ -86,9 +86,9 @@ Somente executar a linha:
     
 Exemplo:
 
-  rvm use 1.8.7
+  rvm use 2.0.0
   
-Se você estiver usando a versão 2.1.1 e precisar utilizar a 1.8.7 ou qualquer outra por algum motivo, é somente utilizar o comando rvm use.
+Se você estiver usando a versão 2.1.1 e precisar utilizar a 2.0.0 ou qualquer outra por algum motivo, é somente utilizar o comando rvm use.
 
 
 ## Instalando o ruby-debug19 (OPCIONAL)
@@ -158,19 +158,3 @@ Para o GEdit usaremos o plugin GMate que tratará snippets, colorização e uma 
     sudo apt-get install gedit-gmate
 
 Abra o GEdit vá em Editar/Edit Preferências/Preferences e em Plug-ins habilite todos. Agora você pode criar sua primeira aplicação Rails e trabalhar com um bom editor.
-
-
-# Instalar Brackets
-
-Brackets é um editor opensource leve e bem agradável de se trabalhar, se bem configurado, ele pode aumentar consideravelmente sua produtividade.
-Para ter ele em sua máquina entre nesta página (oficial do projeto) e efetue o download da versão recomendada por eles:
-
-    http://download.brackets.io/
-    
-Caso não tenha o gdebi, instale-o, pois ele te ajudará não somente neste caso, mas entre muitos outros:
-
-    sudo apt-get install gdebi    
-    
-Depois disso, instale o Brackets pelo terminal com o comando:
-
-    sudo gdebi <arquivo baixado>
