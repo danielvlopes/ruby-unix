@@ -1,6 +1,6 @@
-# RUBY e RAILS NO UBUNTU (12.X)
+# RUBY e RAILS NO UBUNTU (14.X)
 
-Passo a passo para a instalação do Rails (última versão) e Ruby (1.9.3) no Ubuntu. Também envolve aos ajustes do GEdit com instalação do GMate.
+Passo a passo para a instalação do Rails (última versão) e Ruby (1.9.3 e 2.1.3) no Ubuntu. Também envolve aos ajustes do GEdit com instalação do GMate.
 
 ## 1º Atualizando apt-get
 
@@ -10,7 +10,7 @@ Abra o terminal e rode:
 
 ## 2º Instalando pacotes necessários
 
-    sudo apt-get install build-essential openssl libreadline6 libreadline6-dev curl git-core \
+    sudo apt-get install -y build-essential openssl libreadline6 libreadline6-dev curl git-core \
     zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf \
     libc6-dev ncurses-dev automake libtool bison subversion nodejs
 
@@ -20,11 +20,20 @@ O RVM permite instalar e gerenciar várias versões do Ruby. Mas nós usaremos s
 
     curl -L https://get.rvm.io | bash -s stable --ruby
 
+
+Talvez voce precise fechar o terminal e abrir novamente. Ou desconectar da sua vps e reconectar.
+
 ## 4º Definindo o Ruby default
 
 Coloque o ruby 1.9.3 como default do seu usuário:
 
-    rvm --default use 1.9.3
+    	rvm install ruby-1.9.3-p547
+	rvm --default use 1.9.3
+
+Ou Coloque o ruby 2.1.3 como default:
+
+	rvm install 2.1.3
+	rvm --default use 2.1.3
 
 Agora o comando abaixo deve funcionar:
 
@@ -42,10 +51,7 @@ Agora você pode testar criando a sua primeira aplicação:
 
     rails new minha_nova_app
 
-Agora basta navegar para o diretório da minha_nova_app e iniciar o servidor. No entanto desde o Rails 3.1 é necessário uma runtime de javascript. Para isso abra o arquivo Gemfile de dentro do diretório da sua app e acrescente:
-
-    gem 'execjs'
-    gem 'therubyracer'
+Agora basta navegar para o diretório da minha_nova_app e iniciar o servidor.
 
 Salve, feche e rode o comando abaixo no Terminal:
 
