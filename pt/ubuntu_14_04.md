@@ -76,7 +76,7 @@ Você deve manter o "--" no meio do comando. Essas instruções foram obtidas no
 ### Para MySQL
 Para modo de desenvolvimento, na maioria das vezes, o sqlite é suficiente e já foi instalado. Se você pretende usar MySQL a Gem correta é a mysql2, mas antes deve rodar:
 
-    sudo apt-get install libmysqlclient18-dev
+    sudo apt-get install -y libmysqlclient18-dev
 
 Depois:
 
@@ -86,7 +86,7 @@ Depois:
 O PostgreSQL normalmente é utilizando em aplicações com deploy no Heroku. Antes de instalar a gem você deve instalar o banco de dados da seguinte forma:
 Se pretende usar PostgreSQL faça:
 
-    sudo apt-get install libpq-dev
+    sudo apt-get install -y libpq-dev
 
 Depois:
 
@@ -101,7 +101,7 @@ O pacote do mongodb no repositório padrão do Ubuntu normalmente estão desatua
 Depois disso, atualize a lista de pacotes e instale o mongo:
 
     sudo apt-get update
-    sudo apt-get install mongodb-10gen
+    sudo apt-get install -y mongodb-10gen
 
 Essas instruções irão baixar e instalar o pacote, criar um usuário mongodb e configurá-lo para rodar como um serviço usando o upstart. Você pode verificar o status e iniciar/parar o banco com os seguintes comandos:
 
@@ -117,6 +117,6 @@ Para o GEdit usaremos o plugin GMate que tratará snippets, colorização e uma 
 
     sudo apt-add-repository ppa:ubuntu-on-rails/ppa
     sudo apt-get update
-    sudo apt-get install gedit-gmate
+    sudo apt-get install -y gedit-gmate
 
 Abra o GEdit vá em Editar/Edit Preferências/Preferences e em Plug-ins habilite todos. Agora você pode criar sua primeira aplicação Rails e trabalhar com um bom editor.
